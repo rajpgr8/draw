@@ -1,9 +1,81 @@
 <mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.0.0 Safari/537.36" version="24.7.7">
   <diagram name="Page-1" id="w92eC_xvSqQ7IWrLKtXS">
-    <mxGraphModel>
+    <mxGraphModel dx="794" dy="412" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
+        <mxCell id="8FZjNF3c-2PT4HTtmYqX-1" value="App" style="whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
+          <mxGeometry x="414" y="160" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="8FZjNF3c-2PT4HTtmYqX-3" value="User&amp;nbsp;" style="whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
+          <mxGeometry x="100" y="160" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="8FZjNF3c-2PT4HTtmYqX-4" value="Internet" style="ellipse;shape=cloud;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="220" y="160" width="120" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="8FZjNF3c-2PT4HTtmYqX-5" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.875;exitY=0.5;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="1" source="8FZjNF3c-2PT4HTtmYqX-4">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="360" y="220" as="sourcePoint" />
+            <mxPoint x="410" y="200" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="8FZjNF3c-2PT4HTtmYqX-6" value="Login" style="edgeLabel;resizable=0;html=1;;align=center;verticalAlign=middle;" connectable="0" vertex="1" parent="8FZjNF3c-2PT4HTtmYqX-5">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="8FZjNF3c-2PT4HTtmYqX-9" value="Keycloak" style="whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
+          <mxGeometry x="414" y="20" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="8FZjNF3c-2PT4HTtmYqX-10" value="" style="endArrow=classic;html=1;rounded=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;" edge="1" parent="1" source="8FZjNF3c-2PT4HTtmYqX-1" target="8FZjNF3c-2PT4HTtmYqX-9">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="380" y="240" as="sourcePoint" />
+            <mxPoint x="430" y="190" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="8FZjNF3c-2PT4HTtmYqX-12" value="" style="endArrow=classic;html=1;rounded=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0.875;entryY=0.5;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="8FZjNF3c-2PT4HTtmYqX-3" target="8FZjNF3c-2PT4HTtmYqX-4">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="380" y="240" as="sourcePoint" />
+            <mxPoint x="230" y="200" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="8FZjNF3c-2PT4HTtmYqX-13" value="Forward Login to keylcoak (1)" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="434" y="120" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="8FZjNF3c-2PT4HTtmYqX-14" value="" style="endArrow=classic;html=1;rounded=0;exitX=0;exitY=0.25;exitDx=0;exitDy=0;entryX=1.008;entryY=0.1;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="8FZjNF3c-2PT4HTtmYqX-9" target="8FZjNF3c-2PT4HTtmYqX-3">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="380" y="240" as="sourcePoint" />
+            <mxPoint x="430" y="190" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="8FZjNF3c-2PT4HTtmYqX-15" value="Response with&amp;nbsp; Access Token" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="240" y="80" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="8FZjNF3c-2PT4HTtmYqX-16" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.642;exitY=1.033;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="1" source="8FZjNF3c-2PT4HTtmYqX-3">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="360" y="220" as="sourcePoint" />
+            <mxPoint x="410" y="200" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="8FZjNF3c-2PT4HTtmYqX-17" value="Label" style="edgeLabel;resizable=0;html=1;;align=center;verticalAlign=middle;" connectable="0" vertex="1" parent="8FZjNF3c-2PT4HTtmYqX-16">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="8FZjNF3c-2PT4HTtmYqX-18" value="With Access Token&amp;nbsp;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="8FZjNF3c-2PT4HTtmYqX-16">
+          <mxGeometry x="-0.0149" relative="1" as="geometry">
+            <mxPoint x="1" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="8FZjNF3c-2PT4HTtmYqX-22" value="" style="curved=1;endArrow=classic;html=1;rounded=0;exitX=0;exitY=0.75;exitDx=0;exitDy=0;" edge="1" parent="1" source="8FZjNF3c-2PT4HTtmYqX-1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="380" y="240" as="sourcePoint" />
+            <mxPoint x="410" y="70" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="430" y="240" />
+              <mxPoint x="380" y="190" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="8FZjNF3c-2PT4HTtmYqX-23" value="Introspection for Access Token&amp;nbsp;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="354" y="100" width="60" height="30" as="geometry" />
+        </mxCell>
       </root>
     </mxGraphModel>
   </diagram>
